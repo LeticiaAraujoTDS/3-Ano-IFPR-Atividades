@@ -1,17 +1,62 @@
 <?php
 
-$nomes = array("Foz do Iguaçu", "Cascavel", "Chapecó", "Blumenau", "Curitiba");
-$habi = array(250.000, 300.000, 240.000, 330.000, 1500.000);
-$area = array("500km²", "420km²", "120km²", "200km²", "300km²");
-$alt = array("145m", "320m", "620m", "85m", "850m");
-$est = array("Paraná-PR", "Paraná-PR", "Santa Catarina-SC", "Santa Catarina-SC", "Paraná-PR");
-$tit = 
-$matriz = array($nomes, $habi, $area, $alt, $est);
+$cidade1 = array(
+    "nome" => 'Foz do Iguaçu',
+    "habitantes" => 250.000,
+    "area" => '500km2',
+    "altitude" => '145m',
+    "estado" => 'Paraná-PR'
+);
 
-echo "<div> 
-    <table>Tabela</table>
-        <tr>
-        <?php
-        $tr = array('Nome', 'Habitantes', 'Área', 'Altitude', 'Estado');
-        </tr>
-    </div>";
+$cidade2 = array(
+    "nome" => 'Foz do Iguaçu',
+    "habitantes" => 250.000,
+    "area" => '500km2',
+    "altitude" => '145m',
+    "estado" => 'Paraná-PR'
+);
+
+$cidade3 = array(
+    "nome" => 'Foz do Iguaçu',
+    "habitantes" => 250.000,
+    "area" => '500km2',
+    "altitude" => '145m',
+    "estado" => 'Paraná-PR'
+);
+
+$cidade4 = array(
+    "nome" => 'Foz do Iguaçu',
+    "habitantes" => 250.000,
+    "area" => '500km2',
+    "altitude" => '145m',
+    "estado" => 'Paraná-PR'
+);
+
+$cidade5 = array(
+    "nome" => 'Foz do Iguaçu',
+    "habitantes" => 250.000,
+    "area" => '500km2',
+    "altitude" => '145m',
+    "estado" => 'Paraná-PR'
+);
+
+$cidades = array($cidade1, $cidade2, $cidade3, $cidade4, $cidade5);
+
+foreach ($cidades as $cidade) {
+    print "<table>
+    <tr>
+      <th>Nome</th>
+      <th>Habitantes</th>
+      <th>Área</th>
+      <th>Altitude</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>$cidade[nome]</td>
+      <td>$cidade[habitantes]</td>
+      <td>$cidade[area]</td>
+      <td>$cidade[altitude]</td>
+      <td>$cidade[estado]</td>
+    </tr>
+  </table>";
+}
