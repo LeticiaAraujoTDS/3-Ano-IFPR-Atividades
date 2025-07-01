@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+table,
+th,
+td {
+    border-color: #ffffff !important;
+}
+
+#botao:hover {
+    border: 1px red solid;
+    color: red;
+    background-color: transparent;
+    transition: all 0.8s;
+}
